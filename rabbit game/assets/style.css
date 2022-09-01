@@ -1,21 +1,32 @@
 * {
     padding: 0;
     margin: 0;
-   background-color: #222222;
+   background-color: var(--black);
 }
+:root {
+    --black:#222222;
+    --white:#FFFFFF;
+    --gray: #999999;
+    --orange: #FF9D6C;
+  }
 .game {
     width: 600px;
     height: 200px;
-    border: 1px solid #000000;
+    border: 3px solid ;
     margin: auto;
+    border-image-slice: 1;
 }
+.game-border{
+      border-image-source: linear-gradient(to right, #FF6EEB, #FF9D6C, #79FF6E, #6EFFFF, #D09DF2, #FF6EEB);
+}
+
 #rabbit {
     width: 70px;
     height: 70px;
     background-image: url(rabbit.svg);
     background-size: auto 70px;
     position: relative;
-    top: 143px;
+    top: 130px;
     
     transform: scaleX(-1);
   transform: scaleX(-1);
@@ -25,7 +36,7 @@
 }
 @keyframes jump {
     0% {
-        top: 143px; /*distance from top of parent element*/
+        top: 130px; /*distance from top of parent element*/
     }
     30% {
         top: 115px;
@@ -37,14 +48,14 @@
         top: 115px;
     }
     100% {
-        top: 143px;
+        top: 130px;
     }
 }
 #rock {
     width: 20px;
     height: 40px;
     position: relative;
-    top: 91px;
+    top: 100px;
     left: 580px; /*width of frame*/
     background-image: url(rock\ \(5\).svg);
     background-size: 20px 40px;
@@ -65,8 +76,13 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 60px;
     background-size: 10%;
     font-size: large;
     font-weight:bold;
+}
+#feedR {
+    color: var(--gray);
+    text-align: center;
+    padding-top: 90px;
 }
