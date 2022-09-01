@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+   background-color: #222222;
 }
 .game {
     width: 600px;
@@ -11,10 +12,13 @@
 #rabbit {
     width: 70px;
     height: 70px;
-    background-image: url(image.png);
+    background-image: url(rabbit.svg);
     background-size: auto 70px;
     position: relative;
     top: 143px;
+    
+    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .jump {
     animation: jump 0.3s linear;
@@ -36,21 +40,33 @@
         top: 143px;
     }
 }
-#carrot {
+#rock {
     width: 20px;
     height: 40px;
     position: relative;
     top: 91px;
     left: 580px; /*width of frame*/
-    background-image: url(carrot-png.png);
+    background-image: url(rock\ \(5\).svg);
     background-size: 20px 40px;
-    animation: carrot-block 1.2s infinite linear;
+    animation: rock-block 1.2s infinite linear;
 }
-@keyframes carrot-block {
+@keyframes rock-block {
     0% {
         left: 600px;
     }
     100% {
         left: -20px;
     }
+}
+#carrotEarn {
+    font-family: Montserrat;
+    background: rgb(255,110,235);
+   background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 90px;
+    background-size: 10%;
+    font-size: large;
+    font-weight:bold;
 }

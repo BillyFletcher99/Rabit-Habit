@@ -1,5 +1,5 @@
 const rabbit = document.getElementById("rabbit");
-const carrot = document.getElementById("carrot");
+const rock = document.getElementById("rock");
 
 function jump() {
   //making rabbit jump
@@ -16,13 +16,13 @@ let checkAlive = setInterval(function () {
   let rabbitTop = parseInt(
     window.getComputedStyle(rabbit).getPropertyValue("top")
   );
-  let carrotLeft = parseInt(
-    window.getComputedStyle(carrot).getPropertyValue("left")
+  let rockLeft = parseInt(
+    window.getComputedStyle(rock).getPropertyValue("left")
   );
   //check for collision
-  if (carrotLeft > 0 && carrotLeft < 70 && rabbitTop >= 143) {
+  if (rockLeft > 0 && rockLeft < 70 && rabbitTop >= 143) {
     rabbit.style.animationPlayState = "paused";
-    carrot.style.animationPlayState = "paused";
+    rock.style.animationPlayState = "paused";
     alert("Game Over");
     window.location.reload();
   }
