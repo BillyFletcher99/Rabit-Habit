@@ -20,7 +20,7 @@ let checkAlive = setInterval(function () {
     window.getComputedStyle(rock).getPropertyValue("left")
   );
   //check for collision
-  if (rockLeft > 0 && rockLeft < 70 && rabbitTop >= 143) {
+  if (rockLeft > 0 && rockLeft < 70 && rabbitTop >= 130) {
     rabbit.style.animationPlayState = "paused";
     rock.style.animationPlayState = "paused";
     alert("Game Over");
