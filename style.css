@@ -13,6 +13,7 @@ body {
   --white:#FFFFFF;
   --gray: #999999;
   --orange: #FF9D6C;
+  --raindow: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
 }
 
 /* ==== NAVBAR ==== */
