@@ -11,7 +11,7 @@
   }
 .game {
     width: 600px;
-    height: 200px;
+    height: 240px;
     border: 3px solid ;
     margin: auto;
     border-image-slice: 1;
@@ -85,4 +85,17 @@
     color: var(--gray);
     text-align: center;
     padding-top: 90px;
+}
+
+/*carrot & points*/
+
+#carrot {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 120px;
+    left: 580px; /*width of frame*/
+    background-image: url(carrot.svg);
+    background-size: 20px 40px;
+    animation: rock-block 1.2s infinite linear;
 }

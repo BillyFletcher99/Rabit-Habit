@@ -30,3 +30,21 @@ let checkAlive = setInterval(function () {
 document.addEventListener("keydown", function (event) {
   jump();
 });
+
+//collecting carrots
+const carrot = document.getElementById("carrot");
+
+let myScore = setInterval(function () {
+  let rabbitTop = parseInt(
+    window.getComputedStyle(rabbit).getPropertyValue("top")
+  );
+  let carrotLeft = parseInt(
+    window.getComputedStyle(carrot).getPropertyValue("left")
+  );
+  //check for collision
+  if (carrotLeft > 0 && carrotLeft < 70 && rabbitTop >= 130) {
+    let points = 0;
+    points++;
+  }
+  myScore.text = "SCORE: ";
+}, 10);
