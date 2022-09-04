@@ -1,5 +1,10 @@
 const rabbit = document.getElementById("rabbit");
 const rock = document.getElementById("rock");
+const carrot = document.getElementById("carrot");
+const myScore = document.getElementById("myScore");
+let points = 0;
+let pointCollected = false;
+var biteSound;
 
 function jump() {
   //making rabbit jump
@@ -32,9 +37,7 @@ document.addEventListener("keydown", function (event) {
 });
 
 //collecting carrots
-const carrot = document.getElementById("carrot");
-
-let myScore = setInterval(function () {
+let carrotCollection = setInterval(function () {
   let rabbitTop = parseInt(
     window.getComputedStyle(rabbit).getPropertyValue("top")
   );
@@ -42,9 +45,37 @@ let myScore = setInterval(function () {
     window.getComputedStyle(carrot).getPropertyValue("left")
   );
   //check for collision
-  if (carrotLeft > 0 && carrotLeft < 70 && rabbitTop >= 130) {
-    let points = 0;
+  console.log(carrotLeft, rabbitTop, points);
+  if (carrotLeft > 0 && carrotLeft < 70 && rabbitTop <= 85 && !pointCollected) {
+    console.log(points);
     points++;
+    pointCollected = true;
+    biteSound.play();
   }
-  myScore.text = "SCORE: ";
+  if (carrotLeft >= 70) {
+    pointCollected = false;
+  }
+  myScore.innerHTML = `score: ${points}`;
 }, 10);
+
+function sound(src) {
+  this.sound = document.createElement("audio");
+  this.sound.src = src;
+  this.sound.setAttribute("preload", "auto");
+  this.sound.setAttribute("controls", "none");
+  this.sound.style.display = "none";
+  this.sound.playbackRate = 1;
+  document.body.appendChild(this.sound);
+  this.play = function () {
+    this.sound.play();
+  };
+  this.stop = function () {
+    this.sound.pause();
+  };
+}
+
+function initGame() {
+  biteSound = new sound("assets/Bite.mp3");
+}
+
+initGame();

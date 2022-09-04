@@ -99,3 +99,15 @@
     background-size: 20px 40px;
     animation: rock-block 1.2s infinite linear;
 }
+
+#myScore{
+    text-align: center;
+    font-family: Montserrat;
+    background: rgb(255,110,235);
+   background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: medium;
+   background-size: 5%;
+   font-weight:bold;
+}
