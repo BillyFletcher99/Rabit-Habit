@@ -2,21 +2,32 @@
 
 ## Description:
 
+Everyone has some trouble breaking bad habits as well as starting some good ones. It can become very frustrating when you don't know where to started and how to keep yourself motivated. It's a easy start with Rabbit Habit! This application will not only help you keep track with your habits but as well as keep you engaged where for each habit goal you accomplish, you will be rewarded with a carrot that will count towards a life point to play a rabbit game.
+
 ## Table of Contents
 
-- [Images](#images)
-- [Usage](#usage)
+- [Userstory](#user-story)
+- [Mock-up](#mock-up)
+- [APIs](#apis)
 - [Questions](#questions)
 
-## Images:
+## User Story
 
 ---
 
-![image]()
+- As a user I want to become motivated to break my bad habits as well and encourage good habits.
 
-## Usage:
+## Mock-up
 
 ---
+
+![image](<./images/image%20(1).png>)
+
+## APIs
+
+---
+
+-
 
 ## Questions
 
