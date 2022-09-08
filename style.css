@@ -1,0 +1,34 @@
+* {
+    background-color: black;
+}
+.bunnyImage {
+    width: 25px;  
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header {
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   border-style: solid;
+   border-radius: 20px;
+   border-color: #FF6EEB;
+   padding: 6px;
+}
+
+.header-text {
+    background-color: #ff8177;
+    background-image: linear-gradient( to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: right;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+}
+
