@@ -364,6 +364,8 @@ h1 {
 }
 
 .modal {
+  -ms-overflow-style: none!important;
+  scrollbar-width: none!importaNT;
   backdrop-filter: blur(2px);
   transition: all 900ms ease-in-out;
   /*position: relative;*/
@@ -494,7 +496,7 @@ h1 {
 }
 
 .task-color-button-group {
-  overflow: hidden;
+  overflow-x: hidden!important;
   padding: 1rem;
   justify-content: center!important;
   display: flex!important;
@@ -597,11 +599,19 @@ h1 {
 }
 
 .modal-dialog-scrollable .modal-body {
-  overflow-y: visible;
+  /*overflow-y: visible;*/
 }
 
 .modal-dialog-scrollable .modal-content {
   max-height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
 }
 
