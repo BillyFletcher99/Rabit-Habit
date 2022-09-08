@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="scrollbar-hidden" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>rabit_habit</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Giga&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="scrollbar-hidden" style="/*overflow: hidden;*/margin: 0;font-family: 'Montserrat';font-size: var(--bs-body-font-size);font-weight: var(--bs-body-font-weight);line-height: var(--bs-body-line-height);color: var(--white);background-color: var(--black);-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: transparent;">
+    <!-- Start: home -->
+    <div class="scrollbar-hidden">
+        <!-- Start: homepage-row -->
+        <div class="row g-0">
+            <!-- Start: active-tasks-col -->
+            <div class="col">
+                <h1 id="active-tasks-heading-1" class="heading">active tasks</h1>
+                <div id="task-window" class="window-frame" style="/*box-shadow: 0px 5px 25px rgb(0,0,0,.5);*/"><button class="btn new-task-button" id="task-button" type="button" data-bs-target="#modal-contact" data-bs-toggle="modal">+task</button>
+                    <div id="active-tasks-list" class="active-tasks-list">
+                        <div id="task-1" class="task-item">
+                            <div class="row" id="task-title-menu-1">
+                                <div class="col task-title-menu" id="task-title-menu-2"><img class="check-icon unchecked-icon" src="assets/img/checkmark-white.svg"><label class="form-label task-label" id="active-task-1">task 1</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="assets/img/elipse.svg"></button></div>
+                            </div>
+                            <div class="progress task-1-bar" id="task-1-bar">
+                                <div class="progress-bar progress-bar-animated progress-bar-1" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="progress-bar-1" style="width: 50%;"><span class="visually-hidden">50%</span></div>
+                            </div>
+                            <div id="subtask-list" class="subtask-list">
+                                <div id="subtask-1" class="subtask-1"><button class="task-button task-button-1"><img class="check-icon unchecked-icon" src="assets/img/checkmark-black.svg"></button><label class="form-label subtask-label" id="active-task-3">task 1</label></div>
+                                <div id="subtask-2" class="subtask-1"><button class="task-button-1 task-button complete-task"><img class="check-icon checked-icon" src="assets/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-2">task 1</label></div>
+                            </div>
+                            <div class="sub-task-list"></div>
+                        </div>
+                        <div id="task-2" class="task-item">
+                            <div class="row" id="task-title-menu">
+                                <div class="col task-title-menu" id="task-title-menu"><img class="check-icon" src="assets/img/checkmark-white.svg"><label class="form-label task-label task-label-complete" id="active-task-2">task 2</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="assets/img/elipse.svg"></button></div>
+                            </div>
+                            <div class="progress task-2-bar" id="task-2-bar">
+                                <div class="progress-bar progress-bar-animated progress-bar-2" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+                            </div>
+                            <div id="subtask-list" class="subtask-list">
+                                <div id="subtask-1" class="subtask-1"><button class="active task-button task-button-2 complete-task"><img class="check-icon" src="assets/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-5">task 2</label></div>
+                                <div id="subtask-2" class="subtask-1"><button class="btn task-button task-button-2 complete-task"><img class="check-icon checked-icon" src="assets/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-6">task 2</label></div>
+                            </div>
+                            <div class="sub-task-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End: active-tasks-col -->
+            <!-- Start: calender-col -->
+            <div class="col">
+                <div class="badge-frame" style="box-shadow: inset 0px 0px 25px rgb(0,0,0,.25);"><img id="endure-badge" class="badge-icon" src="assets/img/endure.svg"><img id="heart-badge" class="badge-icon" src="assets/img/heart.svg"><img id="stoic-badge" class="badge-icon" src="assets/img/stoic.svg"><img id="valor-badge" class="badge-icon" src="assets/img/valor.svg"><span class="align-items-xl-center user-name" id="user-name">@user</span></div>
+                <div id="calender-window" class="window-frame calender"><span id="date-1" class="date-h">september 6, 2022</span>
+                    <h1 id="date" class="date-h"></h1>
+                    <div id="weekday-group" class="weekday-group"><button class="btn d-xxl-flex align-items-xxl-center day-button day-button-sun" type="button">S</button><button class="btn justify-content-lg-center day-button day-button-mon" type="button">M</button><button class="btn justify-content-lg-center day-button day-button-tue today-day" type="button">W</button><button class="btn justify-content-lg-center day-button day-button-thu" type="button">T</button><button class="btn justify-content-lg-center day-button day-button-fri" type="button">F</button><button class="btn justify-content-lg-center day-button day-button-sat" type="button">S</button></div>
+                </div>
+                <div style="padding: 2rem calc(2rem + 2.5vw);height: 8rem;justify-content: flex-end!important;align-items: flex-end!important;display: flex!important;flex: 1 1 auto!important;flex-grow: 1!important;">
+                    <h1 class="text-center font-gradient h" id="h-total-carrots">carrots earned&nbsp;<span id="total-carrots-earned">2,324<img class="carrot-icon" src="assets/img/carrot.svg"></span></h1>
+                </div>
+            </div><!-- End: calender-col -->
+        </div><!-- End: homepage-row -->
+    </div><!-- End: home -->
+    <!-- Start: modal-contact -->
+    <div class="modal fade scrollbar-hidden" role="dialog" tabindex="-1" id="modal-contact">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content window-frame">
+                <div class="modal-header text-center"><span class="h">add new task</span><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div><!-- End: modal-contact -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/task-functions.js"></script>
+</body>
+
+</html>
