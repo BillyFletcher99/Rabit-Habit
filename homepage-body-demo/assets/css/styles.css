@@ -243,7 +243,7 @@ h1 {
 }
 
 .calender {
-  align-items: center!important;
+  /*align-items: center!important;*/
   text-align: center!important;
   justify-content: center!important;
   display: flex!important;
