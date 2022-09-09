@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Rabit Habit</title>
+    <script src="js\script.js"></script>
+    <script src="js\login.js"></script>
+    <script src="js/home.js"></script>
+</head>
+<body>
+  <!------NAVBAR SECTION------>
+<header>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Resources</a>
+      </li>
+    </ul>
+    <h4 id="quote">quote goes here</h4>
+    <button id="btn">quote</button>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+<!------homepage SECTION------>
+<section id="homepage">
+<img src="images\ojcarrot1.png" alt="" class="carrot">
+<img src="images\bunny-inverse-removebg-preview(2).png" alt="" class="bunny">
+<br>
+<h1>Rabit Habit</h1>
+<p>Habit tracker</p>
+<div class="login-form">
+  <form action="/login" method="POST">
+    <div>
+    <input type="UserName" id="name" name="name" placeholder="UserName" class="UserName">
+    </div>
+    <input type="text" name="email" placeholder="Email@test.com" class="email" id="email">
+    <br>
+    <input type="text" name="password" placeholder="Password" class="password" id="password">
+    <div>
+    <input type="submit" name="" value="login" onclick="validate()" class="login-button" id="login-form button">
+    </div>
+  </form>
+  <a href="/register.html" class="register-btn">Register</a>
+</div>
+</section>
+<!------Info SECTION------>
+<section>               
+  <img src="images\bunny badges.png" class="badges" />
+  <h2>Lorem Ipsum
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, perferendis iusto cumque nisi
+     ipsam laborum autem 
+    eaque nesciunt doloribus aut animi error numquam fugit eum qui molestias, minus quasi in!
+    Lorem Ipsum
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, perferendis iusto cumque nisi
+       ipsam laborum autem 
+      eaque nesciunt doloribus aut animi error numquam fugit eum qui molestias, minus quasi in!
+  </h2>
+</section>
+<section>
+  <div>
+    <img src="images\minigame.png" class="minigame" />
+    <h2>Lorem Ipsum
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, perferendis iusto cumque nisi
+       ipsam laborum autem 
+      eaque nesciunt doloribus aut animi error numquam fugit eum qui molestias, minus quasi in!
+      Lorem Ipsum
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, perferendis iusto cumque nisi
+       ipsam laborum autem 
+      eaque nesciunt doloribus aut animi error numquam fugit eum qui molestias, minus quasi in!
+    </h2>
+  </div>
+</section>
+
+
+<!------Footer SECTION------>
+<footer class="footer">
+<img src="graygithub-icon.png" alt="" class="github-icon">
+</footer>
+
+
+
+</body>
+</html>
