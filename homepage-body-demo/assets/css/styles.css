@@ -425,7 +425,7 @@ h1 {
 
 .task-color-button {
   border: none;
-  margin: 0 .5rem;
+  /*margin: 0 .5rem;*/
   padding: 0;
   height: 1.75rem;
   width: 1.75rem;
@@ -498,7 +498,7 @@ h1 {
 .task-color-button-group {
   overflow-x: hidden!important;
   padding: 1rem;
-  justify-content: center!important;
+  /*justify-content: center!important;*/
   display: flex!important;
   flex-grow: 0!important;
 }
@@ -612,6 +612,10 @@ h1 {
 }
 
 .modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
   display: none;
 }
 
