@@ -138,15 +138,15 @@ h3{
 h1{
   font-size: 2.5rem;
   background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    background-clip: border-box;
+  background-clip: border-box;
   color: transparent;
   background-clip: text;
   display: block;
   left: 43%;
   top: 50%;
   position: absolute;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p{
