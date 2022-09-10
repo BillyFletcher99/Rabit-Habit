@@ -64,13 +64,20 @@ app.get('/register', (req, res) => {
     res.render('register.ejs')
 })
 
+app.get('/home', (req, res) => {
+    res.render('home.ejs')
+})
+
+app.get('/game', (req, res) => {
+    res.render('game.ejs')
+})
+
 //***POSTS***//
 //Successful will take you to homepage, redirect will take you to login
-app.post('/index', passport.authenticate('local',{
-    successRedirect: '/',
+app.post('/login', passport.authenticate('local',{
+    successRedirect: '/home',
     failureRedirect: '/register',
     failureFlash: true,
-
 }))
 
 // Function as async, to use try/catch inside
@@ -79,7 +86,7 @@ app.post('/register', async (req, res) => {
     try{
         const hasedPassword = await bcryptjs.hash(req.body.password, 10)
 //Everything below will be used when the user is creating their account
-//Name, Email, Password(using bcrypt to hash), and the current time stamp
+//Name, Email, Password(using bcryptjs to hash), and the current time stamp
         users.push({
             id: Date.now().toString(),
             name: req.body.name,
