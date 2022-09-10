@@ -40,13 +40,16 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
+
+//Should make it so CSS/ and Images are available through local host ejs
+app.use(express.static('public'));
 //Local variable storage, inside server, used for storing users
 const users = []
 
 // View-engine works off of ejs dependency, can be used in template,
 // when testing localhost3000 on index.ejs 
 // Ejs is just used to render html string through express
-app.set('view-engine' , 'ejs');
+app.set('view-engine' , 'ejs' , 'html');
 
 //***GETS***//
 app.get('/', (req, res) => {
@@ -63,9 +66,9 @@ app.get('/register', (req, res) => {
 
 //***POSTS***//
 //Successful will take you to homepage, redirect will take you to login
-app.post('/login', passport.authenticate('local',{
+app.post('/index', passport.authenticate('local',{
     successRedirect: '/',
-    failureRedirect: '/login',
+    failureRedirect: '/register',
     failureFlash: true,
 
 }))
@@ -94,5 +97,4 @@ app.post('/register', async (req, res) => {
     console.log(users)
 
 })
-
 app.listen(3000);
