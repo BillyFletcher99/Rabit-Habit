@@ -1,0 +1,130 @@
+body{
+    background-color: #222222;
+}
+h1{
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      background-clip: border-box;
+    color: transparent;
+    background-clip: text;
+    display: block;
+    left: 43%;
+    top: 80px;
+    position: absolute;
+  }
+  
+  p{
+    left: 46.6%;
+    top: 57%;
+    position: absolute;
+    color: #8f8f8f;
+    font-size: 20px;
+  }
+  .login-form{
+    width: 50px;
+    top: 70%;
+    left: 45.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #7F8487;
+  }
+  
+  .login-form-btn{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    left: 50px;
+    position: absolute;
+    background-color: #FF6EEB;
+    top: 320px;
+    left: 616;
+  }
+  .email{
+    font-size: 12px;
+    padding: 15px 10px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 25px;
+    margin: 10px;
+    position: absolute;
+    top: 215px;
+    left: 566px;
+  }
+  
+  .password{
+    font-size: 12px;
+    padding: 15px 10px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 25px;
+    margin: 10px;
+    top: 275px;
+    position: absolute;
+    left: 566px;
+  }
+  .UserName{
+    font-size: 12px;
+    padding: 15px 10px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 25px;
+    margin: 10px;
+    position: absolute;
+    top: 154px;
+    left: 566px;
+  }
+  .bunnyImage {
+    width: 25px;  
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header {
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   border-style: solid;
+   border-radius: 20px;
+   border-color: #FF6EEB;
+   padding: 6px;
+}
+
+.header-text {
+    background-color: #ff8177;
+    background-image: linear-gradient( to right, #FF6EEB 0%, #FF9D6C 20%, #79FF6E 40%, #6EFFFF 60%, #D09DF2 80%, #FF6EEB 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: right;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+}
+.form{
+    
+}
+.hamburger{
+    
+}
+/* ==== FOOTER ==== */
+.gitcatoj{
+    float: right;
+    height: 50px;
+    width: 50px;
+    bottom: -113px;
+    position: absolute;
+    right: 14px;
+  }
+  .footer{
+    background: rgb(242,58,241);
+    background: linear-gradient(0deg, rgba(242,58,241,1) 0%, rgba(34,34,34,1) 72%); 
+    display: flex;
+    min-height: 100vh;
+  }

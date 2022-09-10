@@ -18,16 +18,19 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 
 
 /* Quotes */
-const quote = document.querySelector('#quote');
-const btn = document.querySelector('#btn')
-btn.addEventListener('click', randomQuote)
+const api = "http://api.forismatic.com/api/1.0";
 
-function randomQuote(){
-    fetch("https://api.quotable.io/random")
-    .then(res => res.json())
-    .then(data =>{
-        quote.innerHTML = `"${data.content}"`;
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
 
-    })
+btn.addEventListener("click", getQuote);
+
+function getQuote() {
+  fetch(api)
+    .then((res) => res.json())
+    .then((data) => {
+      quote.innerHTML = `"${data.content}"`;
+      author.innerHTML = `- ${data.author}`;
+    });
 }
-window.addEventListener("load", getQuote);
