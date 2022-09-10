@@ -5,13 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>rabit_habit</title>
-    <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Giga&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <link rel="stylesheet" type="text/css"   href="/css/styles.css">
+    <link rel="stylesheet" type="text/css"   href="/css/headerCss.css">
 </head>
 
+<header class="header">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <div>
+          <h3>Rabit Habit</h3>
+        </div>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Resources</a>
+        </li>
+        
+        <a href="/game" class="register-btn"><img src="images\bunny-inverse-removebg-preview(2).png" alt="" class="top-bunny" id="bunny-btn"></a>
+      </ul>
+  
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 <body class="scrollbar-hidden" style="/*overflow: hidden;*//*margin: 0;*/font-family: 'Montserrat';/*font-size: var(--bs-body-font-size);*//*font-weight: var(--bs-body-font-weight);*//*line-height: var(--bs-body-line-height);*/color: var(--white);background-color: var(--black);-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: transparent;">
     <!-- Start: home -->
     <div class="scrollbar-hidden">
@@ -24,27 +51,27 @@
                     <div id="active-tasks-list" class="active-tasks-list">
                         <div id="task-1" class="task-item">
                             <div class="row" id="task-title-menu-3">
-                                <div class="col task-title-menu" id="task-title-menu-4"><img class="check-icon unchecked-icon" src="public/img/checkmark-white.svg"><label class="form-label task-label" id="active-task-4">task 1</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="public/img/elipse.svg"></button></div>
+                                <div class="col task-title-menu" id="task-title-menu-4"><img class="check-icon unchecked-icon" src="/img/checkmark-white.svg"><label class="form-label task-label" id="active-task-4">task 1</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="/img/elipse.svg"></button></div>
                             </div>
                             <div class="progress task-1-bar" id="task-1-bar-1">
                                 <div class="progress-bar progress-bar-animated progress-bar-1" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="progress-bar-1" style="width: 50%;"><span class="visually-hidden">50%</span></div>
                             </div>
                             <div id="subtask-list-1" class="subtask-list">
-                                <div id="subtask-3" class="subtask-1"><button class="task-button task-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><label class="form-label subtask-label" id="active-task-7">task 1</label></div>
-                                <div id="subtask-4" class="subtask-1"><button class="task-button-1 task-button complete-task"><img class="check-icon checked-icon" src="public/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-8">task 1</label></div>
+                                <div id="subtask-3" class="subtask-1"><button class="task-button task-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><label class="form-label subtask-label" id="active-task-7">task 1</label></div>
+                                <div id="subtask-4" class="subtask-1"><button class="task-button-1 task-button complete-task"><img class="check-icon checked-icon" src="/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-8">task 1</label></div>
                             </div>
                             <div class="sub-task-list"></div>
                         </div>
                         <div id="task-2" class="task-item">
                             <div class="row" id="task-title-menu-5">
-                                <div class="col task-title-menu" id="task-title-menu-6"><img class="check-icon" src="public/img/checkmark-white.svg"><label class="form-label task-label task-label-complete" id="active-task-9">task 2</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="public/img/elipse.svg"></button></div>
+                                <div class="col task-title-menu" id="task-title-menu-6"><img class="check-icon" src="/img/checkmark-white.svg"><label class="form-label task-label task-label-complete" id="active-task-9">task 2</label><button class="btn elipse-icon elipse-button" type="button"><img class="elipse-icon" src="/img/elipse.svg"></button></div>
                             </div>
                             <div class="progress task-2-bar" id="task-2-bar-1">
                                 <div class="progress-bar progress-bar-animated progress-bar-2" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
                             </div>
                             <div id="subtask-list-2" class="subtask-list">
-                                <div id="subtask-5" class="subtask-1"><button class="active task-button task-button-2 complete-task"><img class="check-icon" src="public/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-10">task 2</label></div>
-                                <div id="subtask-6" class="subtask-1"><button class="btn task-button task-button-2 complete-task"><img class="check-icon checked-icon" src="public/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-11">task 2</label></div>
+                                <div id="subtask-5" class="subtask-1"><button class="active task-button task-button-2 complete-task"><img class="check-icon" src="/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-10">task 2</label></div>
+                                <div id="subtask-6" class="subtask-1"><button class="btn task-button task-button-2 complete-task"><img class="check-icon checked-icon" src="/img/checkmark-black.svg"></button><label class="form-label subtask-label task-label-complete" id="active-task-11">task 2</label></div>
                             </div>
                             <div class="sub-task-list"></div>
                         </div>
@@ -53,12 +80,12 @@
             </div><!-- End: active-tasks-col -->
             <!-- Start: calender-col -->
             <div class="col">
-                <div class="badge-frame" style="box-shadow: inset 0px 0px 25px rgb(0,0,0,.25);"><img id="endure-badge" class="badge-icon" src="public/img/endure.svg"><img id="heart-badge" class="badge-icon" src="public/img/heart.svg"><img id="stoic-badge" class="badge-icon" src="public/img/stoic.svg"><img id="valor-badge" class="badge-icon" src="public/img/valor.svg"><span class="align-items-xl-center user-name" id="user-name">@user</span></div>
+                <div class="badge-frame" style="box-shadow: inset 0px 0px 25px rgb(0,0,0,.25);"><img id="endure-badge" class="badge-icon" src="/img/endure.svg"><img id="heart-badge" class="badge-icon" src="/img/heart.svg"><img id="stoic-badge" class="badge-icon" src="/img/stoic.svg"><img id="valor-badge" class="badge-icon" src="/img/valor.svg"><span class="align-items-xl-center user-name" id="user-name">@user</span></div>
                 <div id="calender-window" class="window-frame calender"><span id="date" class="date-h">september 6, 2022</span>
                     <div class="justify-content-evenly weekday-group" id="weekday-group"><button class="btn day-button day-button-sun" type="button">S</button><button class="btn day-button day-button-mon" type="button">M</button><button class="btn day-button day-button-tue today-day" type="button">W</button><button class="btn day-button day-button-thu" type="button">T</button><button class="btn day-button day-button-fri" type="button">F</button><button class="btn day-button day-button-sat" type="button">S</button></div>
                 </div>
                 <div style="padding: 2rem calc(2rem + 2.5vw);height: 8rem;justify-content: flex-end!important;align-items: flex-end!important;display: flex!important;flex: 1 1 auto!important;flex-grow: 1!important;">
-                    <h1 class="text-center font-gradient h" id="h-total-carrots">carrots earned&nbsp;<span id="total-carrots-earned">2,324<img class="carrot-icon" src="public/img/carrot.svg"></span></h1>
+                    <h1 class="text-center font-gradient h" id="h-total-carrots">carrots earned&nbsp;<span id="total-carrots-earned">2,324<img class="carrot-icon" src="/img/carrot.svg"></span></h1>
                 </div>
             </div><!-- End: calender-col -->
         </div><!-- End: homepage-row -->
@@ -81,7 +108,7 @@
                             <div id="assign-repeat-weekday-group" class="weekday-group"><button class="day-button day-button-sun" type="button">S</button><button class="day-button day-button-mon" type="button">M</button><button class="day-button day-button-tue today-day" type="button">W</button><button class="day-button day-button-thu" type="button">T</button><button class="day-button day-button-fri" type="button">F</button><button class="day-button day-button-sat" type="button">S</button></div>
                         </div>
                         <div id="new-task-color" class="new-task-color new-task-input"><span class="p-task-form">task color</span>
-                            <div class="justify-content-evenly task-color-button-group" id="task-color-button-group"><button id="task-color-button-1" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><button id="task-color-button-2" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><button id="task-color-button-3" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><button id="task-color-button-4" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><button class="active task-color-button task-color-button-1" id="task-color-button-5"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button><button id="task-color-button-6" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="public/img/checkmark-black.svg"></button></div>
+                            <div class="justify-content-evenly task-color-button-group" id="task-color-button-group"><button id="task-color-button-1" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><button id="task-color-button-2" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><button id="task-color-button-3" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><button id="task-color-button-4" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><button class="active task-color-button task-color-button-1" id="task-color-button-5"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button><button id="task-color-button-6" class="task-color-button task-color-button-1"><img class="check-icon unchecked-icon" src="/img/checkmark-black.svg"></button></div>
                         </div>
                         <div id="new-task-subtasks" class="new-task-subtasks new-task-input">
                             <div id="add-substask" class="add-substask"><span class="p-task-form">add sub task</span>
@@ -95,9 +122,10 @@
             </div>
         </div>
     </div><!-- End: modal-new-task -->
-    <script src="public/js/jquery.min.js"></script>
-    <script src="public/bootstrap/js/bootstrap.min.js"></script>
-    <script src="public/js/task-functions.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/task-functions.js"></script>
 </body>
+
 
 </html>

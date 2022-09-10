@@ -264,9 +264,6 @@ h1 {
   align-self: end;
 }
 
-. + task-button {
-}
-
 .new-task-button {
   margin-left: auto!important;
   display: flex!important;
