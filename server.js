@@ -104,4 +104,4 @@ app.post('/register', async (req, res) => {
     console.log(users)
 
 })
-app.listen(3000);
+app.listen(process.env.PORT||3000);
